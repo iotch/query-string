@@ -7,7 +7,7 @@
   "scripts": {
     "clean": "rimraf dist",
     "test": "TS_NODE_CACHE=false TS_NODE_FAST=true mocha --compilers ts:ts-node/register test/**/*",
-    "build": "npm run clean && npm run test && webpack"
+    "build": "npm run test && npm run clean && tsc"
   },
   "repository": {
     "type": "git",
@@ -29,12 +29,11 @@
     "@types/chai": "^4.0.2",
     "@types/mocha": "^2.2.41",
     "@types/node": "^8.0.20",
-    "@types/webpack": "^3.0.6",
     "chai": "*",
     "mocha": "*",
     "rimraf": "^2.6.1",
-    "ts-loader": "^2.3.2",
-    "webpack": "^3.5.1"
+    "tslib": "^1.7.1",
+    "typescript": "^2.4.2"
   },
   "dependencies": {}
 }
