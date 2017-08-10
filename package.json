@@ -7,7 +7,7 @@
   "scripts": {
     "clean": "rimraf dist",
     "test": "TS_NODE_CACHE=false TS_NODE_FAST=true mocha --compilers ts:ts-node/register test/**/*",
-    "build": "npm run clean && npm run test && webpack -p"
+    "build": "npm run clean && npm run test && webpack"
   },
   "repository": {
     "type": "git",
