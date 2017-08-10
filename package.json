@@ -1,0 +1,40 @@
+{
+  "name": "@iotch/query-string",
+  "version": "0.1.0",
+  "description": "Query string ecoder/decoder",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "clean": "rimraf dist",
+    "test": "TS_NODE_CACHE=false TS_NODE_FAST=true mocha --compilers ts:ts-node/register test/**/*",
+    "build": "npm run clean && npm run test && webpack -p"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iotch/query-string.git"
+  },
+  "keywords": [
+    "query-string",
+    "parse",
+    "encode",
+    "decode"
+  ],
+  "author": "iotch",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/iotch/query-string/issues"
+  },
+  "homepage": "https://github.com/iotch/query-string",
+  "devDependencies": {
+    "@types/chai": "^4.0.2",
+    "@types/mocha": "^2.2.41",
+    "@types/node": "^8.0.20",
+    "@types/webpack": "^3.0.6",
+    "chai": "*",
+    "mocha": "*",
+    "rimraf": "^2.6.1",
+    "ts-loader": "^2.3.2",
+    "webpack": "^3.5.1"
+  },
+  "dependencies": {}
+}

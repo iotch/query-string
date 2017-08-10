@@ -1,0 +1,6 @@
+*.md
+*.config.js
+tsconfig.json
+node_modules
+src
+npm-debug.log
