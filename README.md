@@ -1,2 +1,2 @@
 # query-string
-Query string ecoder/decoder
+Typescript query string ecoder/decoder

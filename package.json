@@ -1,12 +1,12 @@
 {
   "name": "@iotch/query-string",
-  "version": "0.1.0",
+  "version": "0.1.3",
   "description": "Query string ecoder/decoder",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
   "scripts": {
-    "clean": "rimraf dist",
-    "test": "TS_NODE_CACHE=false TS_NODE_FAST=true mocha --compilers ts:ts-node/register test/**/*",
+    "clean": "rimraf lib/*",
+    "test": "TS_NODE_CACHE=false mocha --compilers ts:ts-node/register test/**/*.ts",
     "build": "npm run test && npm run clean && tsc"
   },
   "repository": {
